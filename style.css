@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+/* utility calsses start */
+.h1 {
+  font-size: 2em;
+  color: var(--very-light-gray);
+}
+.bg-bright-orange {
+  background-color: var(--bright-orange);
+}
+.bg-dark-cyan {
+  background-color: var(--dark-cyan);
+}
+.bg-very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+.color-bright-orange {
+  color: var(--bright-orange);
+}
+.color-dark-cyan {
+  color: var(--dark-cyan);
+}
+.color-very-dark-cyan {
+  color: var(--very-dark-cyan);
+}
+.top-left-and-right-radius {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.bottom-left-and-right-radius {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* utility calsses end */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+body {
+  font-size: 15px;
+  font-family: "Big Shoulders Display", cursive;
+  background-color: var(--very-light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+p {
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 920px;
+}
+.card {
+  padding: 3em;
+}
+.card-content {
+  padding-top: 3em;
+}
+.card-footer {
+  padding-top: 1em;
+}
+button {
+  border: 0;
+  padding: 1em;
+  width: 150px;
+  border: 2px solid var(--very-light-gray);
+  border-radius: 3em;
+  background-color: var(--very-light-gray);
+}
+#sedan-button:hover {
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+  cursor: pointer;
+}
+#suv-button:hover {
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+  cursor: pointer;
+}
+#luxury-button:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+  cursor: pointer;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    flex-direction: row;
+  }
+  .card-footer {
+    padding-top: 5em;
+  }
+  .top-left-and-right-radius {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .bottom-left-and-right-radius {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .top-left-and-bottom-left-radius {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .top-right-and-bottom-right-radius {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
